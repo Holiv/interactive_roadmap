@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style-type: none;  
+  /* list-style-type: none;   */
 }
 html{
     height: 100%;
@@ -10,6 +10,12 @@ html{
 body{
     height: 100vh;
     background-color: #c0c0c0;
+}
+summary {
+    font-weight: 600;
+}
+details{
+    margin-bottom: 8px;
 }
 
 .container{
@@ -20,8 +26,6 @@ body{
     display: grid;
     grid-template-columns: minmax(306px, 349px) minmax(624px,706px) minmax(306px, 349px);
     gap: 10;
-
-    /* border: 1px solid red; */
 }
 .personal_info,
 .course_list,
@@ -35,15 +39,12 @@ body{
 }
 .personal_info{
     grid-column: 1 / 2;
-    /* border: 1px solid blue; */
 }
 .course_list{
     grid-column: 2 / 3;
-    /* border: 1px solid black; */
 }
 .tags{
     grid-column: 3 / 4;
-    /* border: 1px solid green; */
 }
 .personal_info .avatar{
     min-height: 180px;
@@ -65,34 +66,34 @@ body{
 .course_link{
     cursor: pointer;
 }
-
+.course_list img{
+    width: auto;
+    height: 12px;
+    margin: auto 4px;
+}
 .pop_up{
     position: absolute;
     min-width: 306px;
     max-width: 349px;
 }
-
-summary {
-    font-weight: 600;
+.window-body ul{
+    padding: 0 12px;
 }
-
-/* .container,
-.personal_info,
-.course_list,
-.tag{
-    height: 100vh;
+.bold{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
-.container{
-    min-width: 1259px;
-    border: 1px solid red;
+.field-row-stacked img{
+    height: 18px;
+    width: auto;
+    margin-right: 6px;
 }
-.personal_info,
-.tag{
-    width: minmax(306px, 349px);
+.field-row-stacked input{
+    width: 200px;
+    cursor: pointer;
 }
-.course_list{
-    min-width: 624px;
+.main_summary{
+    font-size: 12px;
+    color: #0000ff;
 }
-.tag{
-    min-width: ;
-} */

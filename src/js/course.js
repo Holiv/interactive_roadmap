@@ -18,20 +18,29 @@ class Course {
     notes,
     startDate = "Not Started",
     endDate = "In Progress",
-    progress = "0%",
+    progress = 100,
     certificate = "🔒",
     key
   ) {
-    (this.title = title),
-      (this.subject = subject),
-      (this.description = description),
-      (this.link = link);
-    this.notes = notes;
-    (this.startDate = startDate),
-      (this.endDate = endDate),
-      (this.progress = progress),
-      (this.certificate = certificate);
-    (this.key = key);
+    this.title = title,
+    this.subject = subject,
+    this.description = description,
+    this.link = link,
+    this.notes = notes,
+    this.startDate = startDate,
+    this.endDate = endDate,
+    this.progress = progress,
+    this.certificate = certificate;
+    this.key = key;
+    this.status = this.courseStatus();
+  }
+  courseStatus(){
+    if (this.progress === 0) {
+        return "Not Started";
+    } else if (this.progress > 0 && this.progress < 99) {
+        return "In Progress";
+    }
+    return "Complete";
   }
 }
 

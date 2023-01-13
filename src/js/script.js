@@ -27,7 +27,6 @@ const coursesOrderedBySubject = [javascript, csharp, asp_Net];
 //array of HTML elements ordered by subject after iteration
 const coursesOrderedBySubject_HtmlList = [];
 
-
 // ------ organizing the code by function/scope
 
 const filteringCoursesToSpecificArray = (arrayOfCourses) => {
@@ -41,7 +40,7 @@ const filteringCoursesToSpecificArray = (arrayOfCourses) => {
         csharp.push(element);
         subjects.add(element.subject);
         break;
-    case "ASP.NET Core":
+      case "ASP.NET Core":
         asp_Net.push(element);
         subjects.add(element.subject);
         break;
@@ -50,10 +49,9 @@ const filteringCoursesToSpecificArray = (arrayOfCourses) => {
     }
   });
   //array of subjects tags
-  subjects.forEach(element => {
+  subjects.forEach((element) => {
     subjectsTags.push(element);
-  })
-  
+  });
 };
 
 const generatingHtmlListForEachCourse = () => {
@@ -62,7 +60,7 @@ const generatingHtmlListForEachCourse = () => {
   for (let i = 0; i < numberOfSubject; i++) {
     let htmlListCourses = [];
     for (let j = 0; j < coursesOrderedBySubject[i].length; j++) {
-      htmlListCourses += `<li class="course_link" onclick="popUpInfo('${coursesOrderedBySubject[i][j].key}')"></a target=blank href="${coursesOrderedBySubject[i][j].link}">"${coursesOrderedBySubject[i][j].title}"</a></li>`;
+      htmlListCourses += `<li class="course_link" onclick="popUpInfo('${coursesOrderedBySubject[i][j].key}')"></a target=blank href="${coursesOrderedBySubject[i][j].link}">"${coursesOrderedBySubject[i][j].title}"</a><img src="../src/img/icons/${courseStatus(coursesOrderedBySubject[i][j])}"></li>`;
     }
     coursesOrderedBySubject_HtmlList.push(htmlListCourses);
   }
@@ -75,10 +73,19 @@ const popUpInfo = (key) => {
   console.log(positionY);
 };
 
+const courseStatus = (course) => {
+  if (course.status === "Not Started") {
+    return "notstarted.png";
+  } else if (course.status === "In Progress") {
+    return "inprogress.png"
+  }
+  return "complete.png";
+};
+
 const printTree = (subjectsArray, allSubjectList) => {
   for (let i = 0; i < subjectsArray.length; i++) {
     const treeList = `
-                    <details>
+                    <details ${i < 2 ? "open" : ""}>
                         <summary>${subjectsArray[i]}</summary>
                         <ul>
                             ${allSubjectList[i]}
@@ -96,4 +103,3 @@ const renderApplication = () => {
 };
 
 renderApplication();
-
