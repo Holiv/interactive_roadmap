@@ -66,8 +66,51 @@ const generatingHtmlListForEachCourse = () => {
   }
 };
 
+const close_popUpInfo = () => {
+    const open_popup = document.querySelector('.pop_up');
+    if (open_popup){
+      open_popup.remove();
+    }
+    console.log(open_popup)
+}
+
 const popUpInfo = (key) => {
   const course = allCoursesObject[key];
+
+  const certificate_ok = "./src/img/icons/certificate-ok.png";
+  const certificate_no = `<img style="height: 16px" src="./src/img/icons/certificate-no.png">`;
+  const download_certificate = `<a href="${course.certificate}" target="blank_"><img src="${certificate_ok}"></a>`
+
+  close_popUpInfo();
+
+  const popup = `
+  <div class="window pop_up" style="width: 320px; top: ${positionY}px; left: ${positionX}px">
+    <div class="title-bar">
+        <div class="title-bar-text">${course.title}</div>
+        <div class="title-bar-controls">
+        <button aria-label="Close" onclick="close_popUpInfo()"></button>
+      </div>
+    </div>
+    <div class="window-body">
+        <p style="margin-bottom: 8px;">${course.description}</p>
+        <ul>
+            <li><a href="${course.link}" target="blank_">Course Page</a></li>
+            <li><a href="${course.notes}" target="blank_">Course Study Notes</a></li>
+        </ul>
+    </div>
+        <div class="status-bar">
+
+            <p class="status-bar-field status-bar-text">${course.progress < 100 ? course.startDate.toLocaleDateString("pt-BR") : course.endDate.toLocaleDateString("pt-BR") + (`<img style="margin-left: 4px; height: 14px" src="./src/img/icons/${courseStatus(course)}">`)}</p>
+
+            <p class="status-bar-field status-bar-text progress"><span style="width: ${course.progress}%; color: ${course.progress < 5 ? 'black' : '#c0c0c0' }; padding-left: 4px">${course.progress}</span></p>
+
+            <p class="status-bar-field status-bar-text certificate">${course.status === "Complete" ? download_certificate : certificate_no }</p>
+
+        </div>
+    </div>
+  `;
+
+  body.insertAdjacentHTML("afterend", popup);
   console.log(course);
   console.log(positionX);
   console.log(positionY);

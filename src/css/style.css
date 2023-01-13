@@ -75,7 +75,10 @@ details{
     position: absolute;
     min-width: 306px;
     max-width: 349px;
+    top: 100px;
+    left: 200px;
 }
+
 .window-body ul{
     padding: 0 12px;
 }
@@ -96,4 +99,35 @@ details{
 .main_summary{
     font-size: 12px;
     color: #0000ff;
+}
+.status-bar-text,
+.status-bar-text img{
+    display: flex;
+    align-items: center;
+    max-height: 18px;
+}
+.progress{
+    position: relative;
+    color: #c0c0c0;
+    padding: 0 !important;
+}
+.progress span{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 0%;
+    margin: 0;
+    position: absolute;
+    background: linear-gradient(
+    90deg,
+    #000080,
+    #1084d0
+  );
+  z-index: 0;
+}
+.certificate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
