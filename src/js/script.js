@@ -60,7 +60,7 @@ const generatingHtmlListForEachCourse = () => {
   for (let i = 0; i < numberOfSubject; i++) {
     let htmlListCourses = [];
     for (let j = 0; j < coursesOrderedBySubject[i].length; j++) {
-      htmlListCourses += `<li class="course_link" onclick="popUpInfo('${coursesOrderedBySubject[i][j].key}')"></a target=blank href="${coursesOrderedBySubject[i][j].link}">"${coursesOrderedBySubject[i][j].title}"</a><img src="../img/icons/${courseStatus(coursesOrderedBySubject[i][j])}"></li>`;
+      htmlListCourses += `<li class="course_link" onclick="popUpInfo('${coursesOrderedBySubject[i][j].key}')"></a target=blank href="${coursesOrderedBySubject[i][j].link}">"${coursesOrderedBySubject[i][j].title}"</a><img src="./src/img/icons/${courseStatus(coursesOrderedBySubject[i][j])}"></li>`;
     }
     coursesOrderedBySubject_HtmlList.push(htmlListCourses);
   }
