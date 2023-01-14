@@ -102,7 +102,7 @@ const popUpInfo = (key) => {
 
             <p class="status-bar-field status-bar-text">${course.progress < 100 ? course.startDate.toLocaleDateString("pt-BR") : course.endDate.toLocaleDateString("pt-BR") + (`<img style="margin-left: 4px; height: 14px" src="./src/img/icons/${courseStatus(course)}">`)}</p>
 
-            <p class="status-bar-field status-bar-text progress"><span style="width: ${course.progress}%; color: ${course.progress < 5 ? 'black' : '#c0c0c0' }; padding-left: 4px">${course.progress}</span></p>
+            <p class="status-bar-field status-bar-text progress"><span style="width: ${course.progress}%; color: ${course.progress < 5 ? 'black' : '#c0c0c0' }; padding-left: 4px">${course.progress}%</span></p>
 
             <p class="status-bar-field status-bar-text certificate">${course.status === "Complete" ? download_certificate : certificate_no }</p>
 
