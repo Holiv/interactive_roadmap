@@ -1,56 +1,62 @@
-@media screen and (max-width: 1180px) and (orientation: landscape) {
-    .window-primary-container{
-        padding: 50px 50px 50px 90px;
-    }
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .window-primary-container {
+    padding: 50px 50px 50px 90px;
   }
+}
 
-  @media screen and (max-width: 820px) and (orientation: portrait) {
-    .personal_info .avatar{
-        min-height: 150px;
-    }
-    .container{
-        grid-template-columns: minmax(300, 350) minmax(300, 350);
-        grid-template-rows: 1fr 1fr;
-    }
-    .personal_info{
-        grid-row: 1 / span 2;
-    }
-    .tags{
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
-    .window-secondary-container{
-        max-width: 700px;
-        min-width: 350px;
-        max-height: 950px;
-    }
-    .window-primary-container{
-        padding: 50px 50px 50px 90px;
-    }
+@media screen and (max-width: 820px) and (orientation: portrait) {
+  .personal_info .avatar {
+    min-height: 150px;
   }
+  .container {
+    grid-template-columns: minmax(300px, 350px) minmax(300px, 350px);
+    grid-template-rows: 1fr 1fr;
+  }
+  .personal_info {
+    grid-row: 1 / span 2;
+  }
+  .course_list {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .tags {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .window-secondary-container {
+    max-width: 700px;
+    min-width: 350px;
+    max-height: 950px;
+    overflow-x: hidden;
+  }
+  .window-primary-container {
+    padding: 50px 0px 50px 90px;
+  }
+}
 
-  @media screen and (max-width: 480px) {
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 300px 300px;
-    }
-    .personal_info{
-        grid-row: 1 / 2;
-    }
-    .course_list{
-        grid-row: 2 / 3;
-        grid-column: 1 / 2;
-    }
-    .tags{
-        grid-row: 3 / 4;
-        grid-column: 1 / 2;
-    }
-    .window-secondary-container{
-        max-width: 370px;
-        min-width: 280px;
-        max-height: 780px;
-    }
-    .window-primary-container{
-        padding: 0px 0px 10px 90px;
-    }
+@media screen and (max-width: 720px) {
+  .container {
+    grid-template-columns: minmax(260px, 1fr);
+    grid-template-rows: 1fr 300px 300px;
   }
+  .personal_info {
+    grid-row: 1 / 2;
+  }
+  .course_list {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  .tags {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+  .window-secondary-container {
+    max-width: 370px;
+    min-width: 260px;
+    max-height: 100%;
+    overflow-x: hidden;
+  }
+  .window-primary-container {
+    padding: 0px 0px 30px 90px;
+  }
+}
