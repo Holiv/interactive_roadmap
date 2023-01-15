@@ -4,6 +4,10 @@
 const body = document.querySelector("body");
 const tree = document.querySelector(".main_tree-view");
 
+//getting screen size
+const pageWidth = window.innerWidth;
+const pageHeight = window.innerHeight;
+
 //getting mouse click coordinates
 let positionX;
 let positionY;
@@ -28,6 +32,22 @@ const coursesOrderedBySubject = [javascript, csharp, asp_Net];
 const coursesOrderedBySubject_HtmlList = [];
 
 // ------ organizing the code by function/scope
+
+const getPopupPosition = (position) => {
+  let mobilePositionX;
+  let mobilePositionY;
+
+  mobilePositionX = (pageWidth - 320) / 2;
+  mobilePositionY = pageHeight / 2;
+
+  switch(position){
+    case "X":
+      return mobilePositionX
+    case "Y":
+      return mobilePositionY
+  }
+  
+}
 
 const filteringCoursesToSpecificArray = (arrayOfCourses) => {
   arrayOfCourses.forEach((element) => {
@@ -84,7 +104,7 @@ const popUpInfo = (key) => {
   close_popUpInfo();
 
   const popup = `
-  <div class="window pop_up" style="width: 320px; top: ${positionY}px; left: ${positionX}px">
+  <div class="window pop_up" style="width: 320px; top: ${pageWidth <= 480 ? getPopupPosition("Y") : positionY}px; left: ${pageWidth <= 480 ? getPopupPosition("X") : positionX}px">
     <div class="title-bar">
         <div class="title-bar-text">${course.title}</div>
         <div class="title-bar-controls">
