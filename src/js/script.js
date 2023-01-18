@@ -68,10 +68,7 @@ const filteringCoursesToSpecificArray = (arrayOfCourses) => {
         console.log("incorrect element");
     }
   });
-  //array of subjects tags
-  subjects.forEach((element) => {
-    subjectsTags.push(element);
-  });
+  subjectsTags.push(...Array.from(subjects));
 };
 
 const generatingHtmlListForEachCourse = () => {
