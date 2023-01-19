@@ -129,6 +129,8 @@ footer,
 }
 .windows-start-bar {
   padding: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 .windows-start-bar button {
   height: inherit;
