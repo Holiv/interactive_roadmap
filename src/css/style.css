@@ -62,6 +62,14 @@ footer {
   z-index: 9999;
   height: 28px;
 }
+
+.window-body a{
+  text-decoration: none;
+  display: block;
+  line-height: 1rem;
+  color: #000000;
+  padding: 0 12px;
+}
 footer,
 .window-secondary-container {
   box-shadow: var(--border-window-outer), var(--border-window-inner);

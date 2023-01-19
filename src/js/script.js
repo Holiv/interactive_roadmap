@@ -20,34 +20,23 @@ function handleMousePosition(event) {
 //arrays to group courses by subject
 const javascript = [];
 const csharp = [];
+const computer_science = [];
 const asp_Net = [];
+const sql = [];
+const ef_core = [];
+const solid = [];
+const ddd = [];
 
 //Set to store the existing subjects
 const subjects = new Set();
 const subjectsTags = [];
 
 //array of courses ordered by subjects to iterate and create the HTML elements
-const coursesOrderedBySubject = [javascript, csharp, asp_Net];
+const coursesOrderedBySubject = [];
 //array of HTML elements ordered by subject after iteration
 const coursesOrderedBySubject_HtmlList = [];
 
 // ------ organizing the code by function/scope
-
-const getPopupPosition = (position) => {
-  let mobilePositionX;
-  let mobilePositionY;
-
-  mobilePositionX = (pageWidth - 320) / 2;
-  mobilePositionY = pageHeight / 2;
-
-  switch(position){
-    case "X":
-      return mobilePositionX
-    case "Y":
-      return mobilePositionY
-  }
-  
-}
 
 const filteringCoursesToSpecificArray = (arrayOfCourses) => {
   arrayOfCourses.forEach((element) => {
@@ -55,14 +44,42 @@ const filteringCoursesToSpecificArray = (arrayOfCourses) => {
       case "JavaScript":
         javascript.push(element);
         subjects.add(element.subject);
+        courseTagMatch(javascript);
         break;
       case "C#":
         csharp.push(element);
         subjects.add(element.subject);
+        courseTagMatch(csharp);
         break;
       case "ASP.NET Core":
         asp_Net.push(element);
         subjects.add(element.subject);
+        courseTagMatch(asp_Net);
+        break;
+      case "Computer Science":
+        computer_science.push(element);
+        subjects.add(element.subject);
+        courseTagMatch(computer_science);
+        break;
+      case "SQL":
+        sql.push(element);
+        subjects.add(element.subject);
+        courseTagMatch(sql);
+        break;
+      case "EF Core":
+        ef_core.push(element);
+        subjects.add(element.subject);
+        courseTagMatch(ef_core);
+        break;
+      case "SOLID":
+        solid.push(element);
+        subjects.add(element.subject);
+        courseTagMatch(solid);
+        break;
+      case "DDD":
+        ddd.push(element);
+        subjects.add(element.subject);
+        courseTagMatch(ddd);
         break;
       default:
         console.log("incorrect element");
@@ -82,14 +99,6 @@ const generatingHtmlListForEachCourse = () => {
     coursesOrderedBySubject_HtmlList.push(htmlListCourses);
   }
 };
-
-const close_popUpInfo = () => {
-    const open_popup = document.querySelector('.pop_up');
-    if (open_popup){
-      open_popup.remove();
-    }
-    console.log(open_popup)
-}
 
 const popUpInfo = (key) => {
   const course = allCoursesObject[key];
@@ -117,7 +126,7 @@ const popUpInfo = (key) => {
     </div>
         <div class="status-bar">
 
-            <p class="status-bar-field status-bar-text">${course.progress < 100 ? course.startDate.toLocaleDateString("pt-BR") : course.endDate.toLocaleDateString("pt-BR") + (`<img style="margin-left: 4px; height: 14px" src="./src/img/icons/${courseStatus(course)}">`)}</p>
+            <p class="status-bar-field status-bar-text">${formatDate(course) + (`<img style="margin-left: 4px; height: 14px" src="./src/img/icons/${courseStatus(course)}">`)}</p>
 
             <p class="status-bar-field status-bar-text progress"><span style="width: ${course.progress}%; color: ${course.progress < 5 ? 'black' : '#c0c0c0' }; padding-left: 4px">${course.progress}%</span></p>
 
@@ -128,24 +137,12 @@ const popUpInfo = (key) => {
   `;
 
   body.insertAdjacentHTML("afterend", popup);
-  console.log(course);
-  console.log(positionX);
-  console.log(positionY);
-};
-
-const courseStatus = (course) => {
-  if (course.status === "Not Started") {
-    return "notstarted.png";
-  } else if (course.status === "In Progress") {
-    return "inprogress.png"
-  }
-  return "complete.png";
 };
 
 const printTree = (subjectsArray, allSubjectList) => {
   for (let i = 0; i < subjectsArray.length; i++) {
     const treeList = `
-                    <details ${i < 2 ? "open" : ""}>
+                    <details ${i < 5 ? "open" : ""}>
                         <summary>${subjectsArray[i]}</summary>
                         <ul>
                             ${allSubjectList[i]}
