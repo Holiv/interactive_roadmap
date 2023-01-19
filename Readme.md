@@ -4,9 +4,7 @@
 
 <b>The main objective of this website is to create a interactive way to know more about me. Gathering information in a simple but eficient way using a nice and clean (and nostalgic 🥹) interface.</b>
 
-
-https://user-images.githubusercontent.com/97141987/213456678-024fdda3-b1b1-4891-8450-459deff88bfb.mov
-
+https://user-images.githubusercontent.com/97141987/213456913-82f99919-c67c-4291-8297-b38375b81184.mov
 
 ## Summary
 1. <b>General Information</b>
