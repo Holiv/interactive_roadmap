@@ -4,6 +4,10 @@
 
 <b>The main objective of this website is to create a interactive way to know more about me. Gathering information in a simple but eficient way using a nice and clean (and nostalgic 🥹) interface.</b>
 
+
+https://user-images.githubusercontent.com/97141987/213456678-024fdda3-b1b1-4891-8450-459deff88bfb.mov
+
+
 ## Summary
 1. <b>General Information</b>
    1. <a href="#intro">Introduction</a>
