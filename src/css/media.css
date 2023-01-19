@@ -60,3 +60,11 @@
     padding: 0px 0px 30px 90px;
   }
 }
+@media screen and (max-width: 480px) {
+  .course_link{
+    max-width: 200px;
+  }
+  .main_tree-view{
+    overflow-x: hidden;
+  }
+}

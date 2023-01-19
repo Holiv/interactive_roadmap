@@ -20,7 +20,6 @@ const close_popUpInfo = () => {
   if (open_popup) {
     open_popup.remove();
   }
-  console.log(open_popup);
 };
 
 const courseTagMatch = (course) => {

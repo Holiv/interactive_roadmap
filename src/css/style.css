@@ -195,12 +195,18 @@ footer,
   width: 100%;
   height: 100%;
 }
-
+.main_tree-view{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 .window {
   width: 100%;
 }
 .course_link {
   cursor: pointer;
+  width: calc(100% - 35px);
+  margin: 0;
+
 }
 .course_list img {
   width: auto;
