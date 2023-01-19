@@ -204,7 +204,7 @@ footer,
 }
 .course_link {
   cursor: pointer;
-  width: calc(100% - 35px);
+  width: calc(100% - 16px);
   margin: 0;
 
 }
