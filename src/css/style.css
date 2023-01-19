@@ -62,8 +62,13 @@ footer {
   z-index: 9999;
   height: 28px;
 }
-
-.window-body a{
+button{
+  cursor: pointer;
+}
+.project button{
+  padding: 0;
+}
+.project a, .project button:disabled{
   text-decoration: none;
   display: block;
   line-height: 1rem;
