@@ -81,7 +81,7 @@ const cs_1 = new Course(
   new Date(2022, 11, 4),
   new Date(2022, 11, 19),
   100,
-  "https://app.pluralsight.com/learner/user/courses/v2/d7680953-feb2-48a0-8f74-4d3185346656/certificate",
+  "https://drive.google.com/file/d/1PF2VDm3Bl5N2k5nGYu3Bweq7lc5ViSL1/view?usp=share_link",
   'cs1'
 );
 //#endregion
@@ -95,7 +95,7 @@ const cs_2 = new Course(
   new Date(2022, 11, 19),
   new Date(2022, 11, 21),
   100,
-  "https://app.pluralsight.com/learner/user/courses/v2/c3cbe931-ebbb-49dd-b36e-f464ac7c2de3/certificate",
+  "https://drive.google.com/file/d/1_237kUqVodMTfeB_-sQrxHOrS4dUwBfC/view?usp=share_link",
   'cs2'
 );
 //#endregion
@@ -109,7 +109,7 @@ const cs_3 = new Course(
   new Date(2022, 11, 21),
   new Date(2022, 11, 25),
   100,
-  "https://app.pluralsight.com/learner/user/courses/v2/4dc0d11e-a1bb-4e5e-90ea-895fc47fbeed/certificate",
+  "https://drive.google.com/file/d/10-JrZ4f02NhLjMid4EWp7lS4n05gDW5z/view?usp=share_link",
   "cs3"
 );
 //#endregion
@@ -123,7 +123,7 @@ const cs_4 = new Course(
     new Date(2022, 11, 25),
     new Date(2022, 11, 28),
     100,
-    "https://app.pluralsight.com/learner/user/courses/v2/35902f00-b1c1-4d21-90b7-2ddcc6a96324/certificate",
+    "https://drive.google.com/file/d/1x6L4B9eikAmAb9ep0wJPTKQh0tvtN1sE/view?usp=share_link",
     "cs4"
   );
   //#endregion
@@ -137,7 +137,7 @@ const cs_4 = new Course(
     new Date(2022, 11, 28),
     new Date(2023, 0, 17),
     100,
-    "https://app.pluralsight.com/learner/user/courses/v2/f2a0fa54-9012-4f2b-868e-15ed334e700e/certificate",
+    "https://drive.google.com/file/d/1xBmyFBSZE4s5joQKL37Ev_p1dth8iDWH/view?usp=share_link",
     "cs5"
   );
   //#endregion
@@ -149,9 +149,9 @@ const cs_4 = new Course(
     "https://app.pluralsight.com/library/courses/linq-fundamentals-csharp-10/",
     "https://nostalgic-judge-413.notion.site/LINQ-Fundamentals-in-C-10-37d69ad8d3c94fb7a31e2177c5ff15ab",
     new Date(2023, 0, 17),
-    undefined,
-    25,
-    undefined,
+    new Date(2023, 0, 21),
+    100,
+    "https://app.pluralsight.com/learner/user/courses/v2/4cbfe7d9-307e-438e-9720-1aae97e2371b/certificate",
     "cs6"
   );
 //#endregion
