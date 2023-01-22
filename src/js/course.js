@@ -151,7 +151,7 @@ const cs_4 = new Course(
     new Date(2023, 0, 17),
     new Date(2023, 0, 21),
     100,
-    "https://app.pluralsight.com/learner/user/courses/v2/4cbfe7d9-307e-438e-9720-1aae97e2371b/certificate",
+    "https://drive.google.com/file/d/181QJ0jNIRxb0tBVS5q0T6MebBIo_5jkR/view?usp=share_link",
     "cs6"
   );
 //#endregion
