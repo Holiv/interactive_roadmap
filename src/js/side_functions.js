@@ -1,5 +1,5 @@
 "use strict";
-
+import { coursesOrderedBySubject } from "./script.js";
 const getPopupPosition = (position) => {
   let mobilePositionX;
   let mobilePositionY;
@@ -43,4 +43,12 @@ const courseStatus = (course) => {
     return "inprogress.png";
   }
   return "complete.png";
+};
+
+export {
+  formatDate,
+  courseTagMatch,
+  close_popUpInfo,
+  courseStatus,
+  getPopupPosition,
 };
