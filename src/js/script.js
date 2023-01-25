@@ -308,7 +308,7 @@ const tree = document.querySelector(".main_tree-view");
 //getting screen size
 const pageWidth = window.innerWidth;
 const pageHeight = window.innerHeight;
-
+// @Holiv it looks like you don't use pageHeight in script.js?
 //getting mouse click coordinates
 let positionX;
 let positionY;
@@ -406,7 +406,9 @@ const generatingHtmlListForEachCourse = () => {
     coursesOrderedBySubject_HtmlList.push(htmlListCourses);
   }
 };
-
+/* index.html:259 Uncaught ReferenceError: popUpInfo is not defined
+    at HTMLLIElement.onclick (index.html:259:9)
+    */
 const popUpInfo = (key) => {
   const course = allCoursesObject[key];
 
