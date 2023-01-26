@@ -1,246 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#c0c0c0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="stylesheet" href="./src/css/media.css">
-    <!-- <link rel="stylesheet" href="node_modules/98.css/style.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/98.css" />
-    <title>Helton Oliveira - Roadmap</title>
-  </head>
-  <body>
-    <div class="window-primary-container">
-      <section class="desktop-items">
-        <a href="src/pages/blue_screen.html" class="items">
-          <img src="./src/img/icons/computer_explorer-5.png" alt="" />
-          <label for="Computer">Computer</label>
-        </a>
-        <a href="src/pages/blue_screen.html" class="items">
-          <img src="./src/img/icons/directory_closed-4.png" alt="" />
-          <label for="Directory">My Files</label>
-        </a>
-        <a href="src/pages/blue_screen.html" class="items">
-          <img src="./src/img/icons/recycle_bin_empty-4.png" alt="" />
-          <label for="Recicle Bin">Recicle Bin</label>
-        </a>
-        <a
-          class="items"
-          ondblclick="document.querySelector('.window-secondary-container').style.display = 'block'"
-         onclick="document.querySelector('.window-secondary-container').style.display = 'block'">
-          <img src="./src/img/icons/msie1-2.png" alt="" />
-          <label for="Roadmap">Roadmap</label>
-        </a>
-      </section>
 
-      <section class="window-secondary-container">
-        <div class="title-bar">
-          <div class="title-bar-text">Helton's Roadmap</div>
-          <div class="title-bar-controls">
-            <button aria-label="Help"></button>
-            <button
-              aria-label="Close"
-              onclick="document.querySelector('.window-secondary-container').style.display = 'none'"
-            ></button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#c0c0c0" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/media.css">
+  <!-- <link rel="stylesheet" href="node_modules/98.css/style.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/98.css" />
+  <title>Helton Oliveira - Roadmap</title>
+</head>
+
+<body>
+  <div class="window-primary-container">
+    <section class="desktop-items">
+      <a href="src/pages/blue_screen.html" class="items">
+        <img src="./src/img/icons/computer_explorer-5.png" alt="" />
+        <label for="Computer">Computer</label>
+      </a>
+      <a href="src/pages/blue_screen.html" class="items">
+        <img src="./src/img/icons/directory_closed-4.png" alt="" />
+        <label for="Directory">My Files</label>
+      </a>
+      <a href="src/pages/blue_screen.html" class="items">
+        <img src="./src/img/icons/recycle_bin_empty-4.png" alt="" />
+        <label for="Recicle Bin">Recicle Bin</label>
+      </a>
+      <a class="items" ondblclick="document.querySelector('.window-secondary-container').style.display = 'block'"
+        onclick="document.querySelector('.window-secondary-container').style.display = 'block'">
+        <img src="./src/img/icons/msie1-2.png" alt="" />
+        <label for="Roadmap">Roadmap</label>
+      </a>
+    </section>
+
+    <section class="window-secondary-container">
+      <div class="title-bar">
+        <div class="title-bar-text">Helton's Roadmap</div>
+        <div class="title-bar-controls">
+          <button aria-label="Help"></button>
+          <button aria-label="Close"
+            onclick="document.querySelector('.window-secondary-container').style.display = 'none'"></button>
         </div>
-
-        <main class="container">
-          <aside class="personal_info">
-            <div class="avatar">
-              <img
-                src="./src/img/avatar/197 Sem Título_20220922174515.png"
-                alt="user avatar"
-              />
-            </div>
-
-            <div class="window">
-              <div class="title-bar">
-                <div class="title-bar-text">Personal Info</div>
-                <div class="title-bar-controls">
-                  <button aria-label="Help"></button>
-                </div>
-              </div>
-              <div class="window-body">
-                <p class="bold">Helton Oliveira</p>
-                <p>ASP.NET Backend Developer</p>
-                <div class="window-body">
-                  <div class="field-row-stacked" style="width: 200px">
-                    <label for="text22"
-                      ><img src="./src/img/icons/mailbox_world-0.png" alt="" />
-                      Email
-                    </label>
-                    <input id="text22" type="email" value="helton@p30.dev" />
-                  </div>
-
-                  <div class="field-row-stacked" style="width: 200px">
-                    <label for="text23"
-                      ><img
-                        src="./src/img/icons/expand_hierarchial_array-0.png"
-                        alt=""
-                      />Github</label
-                    >
-                    <a href="https://github.com/holiv">
-                      <input id="text23" type="text" value="github.com/holiv"
-                    /></a>
-                  </div>
-
-                  <div class="field-row-stacked" style="width: 200px">
-                    <label for="text23"
-                      ><img
-                        src="./src/img/icons/shell_window5-1.png"
-                        alt=""
-                      />LinkedIn</label
-                    >
-                    <a
-                      href="https://www.linkedin.com/in/helton-oliveira-521abbb2/"
-                    >
-                      <input id="text23" type="text" value="linkdin.com/holiv"
-                    /></a>
-                  </div>
-
-                  <div class="field-row-stacked" style="width: 200px">
-                    <label for="text23"
-                      ><img
-                        src="./src/img/icons/newspaper.png"
-                        alt=""
-                      />Blog</label
-                    >
-                    <a
-                      href="https://www.linkedin.com/in/helton-oliveira-521abbb2/"
-                    >
-                      <input id="text23" type="text" value="blog.p30.dev"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <ul class="tree-view">
-              <details open>
-                <summary class="main_summary">Formação</summary>
-                <ul>
-                  <details open>
-                    <summary>Engenharia Civil</summary>
-                    <ul>
-                      <li>Universidade Estácio de Sá</li>
-                      <li>Bacharelado</li>
-                      <li>Dezembro, 2013</li>
-                    </ul>
-                  </details>
-                  <details>
-                    <summary>Engenharia de Segurança do Trabalho</summary>
-                    <ul>
-                      <li>Faculdade Redentor</li>
-                      <li>Pós Graduação</li>
-                      <li>Setembro, 2015</li>
-                    </ul>
-                  </details>
-                </ul>
-              </details>
-
-              <details open>
-                <summary class="main_summary">Experiência</summary>
-                <ul>
-                  <details open>
-                    <summary>Engenheiro de Segurança do Trabalho</summary>
-                    <ul>
-                      <li>U.S Moura Empreendimentos</li>
-                      <li>2016, Atual</li>
-                    </ul>
-                  </details>
-                  <details>
-                    <summary>Engenheiro Civil - Projetista</summary>
-                    <ul>
-                      <li>Projetos civis 2D e 3D</li>
-                      <li>Autônomo</li>
-                      <li>2016, Atual</li>
-                    </ul>
-                  </details>
-                </ul>
-              </details>
-
-              <details open>
-                <summary class="main_summary">Idioma</summary>
-                <ul>
-                  <details open>
-                    <summary>Inglês</summary>
-                    <ul>
-                      <li>B2</li>
-                    </ul>
-                  </details>
-                  <details>
-                    <summary>Português</summary>
-                    <ul>
-                      <li>Nativo</li>
-                    </ul>
-                  </details>
-                </ul>
-              </details>
-            </ul>
-          </aside>
-
-          <section class="course_list">
-            <ul class="tree-view main_tree-view">
-              <!-- Content render by JavaScript -->
-            </ul>
-          </section>
-
-          <section class="tags">
-            <div class="window">
-              <div class="title-bar">
-                <div class="title-bar-text">Technologies</div>
-                <div class="title-bar-controls">
-                  <button aria-label="Help"></button>
-                </div>
-              </div>
-              <div class="window-body">
-                <button>HTML</button>
-                <button>CSS</button>
-                <button>JavaScript</button>
-                <button>C#</button>
-                <button disabled>ASP.NET Core</button>
-                <button disabled>SQL Server</button>
-                <button disabled>Entity Framework</button>
-                <button disabled>xUnit</button>
-                <button disabled>SOLID</button>
-                <button disabled>DDD</button>
-              </div>
-            </div>
-
-            <div class="window">
-              <div class="title-bar">
-                <div class="title-bar-text">Projects</div>
-                <div class="title-bar-controls">
-                  <button aria-label="Help"></button>
-                </div>
-              </div>
-              <div class="window-body project">
-                <button><a href="https://holiv.github.io/super-mario-startse/" target="_blank">Super Mario Game</a></button>
-                <button><a href="https://vector-bank.netlify.app/" target="_blank">Vector Bank</a></button>
-                <button><a href="https://github.com/Holiv/pie_shop" target="_blank">Shop Manager</a></button>
-                <button disabled>Interactive Roadmap</button>
-              </div>
-            </div>
-          </section>
-        </main>
-      </section>
-    </div>
-    <footer class="windows-start-bar">
-      <button>
-        <img src="./src/img/icons/windows-0.png" alt="" />
-        <label for="">Start</label>
-      </button>
-      <div class="field-row">
-        <label for="text21">Copyright © 2023 Helton Oliveira</label>
-        <label for="text21"><a href="https://github.com/Holiv/interactive_roadmap">Github Repository</a></label>
       </div>
-    </footer>
 
-    <script type="text/javascript" src="./src/js/side_functions.js"></script>
-    <script type="text/javascript" src="./src/js/course.js"></script>
-    <script type="text/javascript" src="./src/js/script.js"></script>
-  </body>
+      <main class="container">
+        <aside class="personal_info">
+          <div class="avatar">
+            <img src="./src/img/avatar/197 Sem Título_20220922174515.png" alt="user avatar" />
+          </div>
+
+          <div class="window">
+            <div class="title-bar">
+              <div class="title-bar-text">Personal Info</div>
+              <div class="title-bar-controls">
+                <button aria-label="Help"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <p class="bold">Helton Oliveira</p>
+              <p>ASP.NET Backend Developer</p>
+              <div class="window-body">
+                <div class="field-row-stacked" style="width: 200px">
+                  <label for="text22"><img src="./src/img/icons/mailbox_world-0.png" alt="" />
+                    Email
+                  </label>
+                  <input id="text22" type="email" value="helton@p30.dev" />
+                </div>
+
+                <div class="field-row-stacked" style="width: 200px">
+                  <label for="text23"><img src="./src/img/icons/expand_hierarchial_array-0.png" alt="" />Github</label>
+                  <a href="https://github.com/holiv">
+                    <input id="text23" type="text" value="github.com/holiv" /></a>
+                </div>
+
+                <div class="field-row-stacked" style="width: 200px">
+                  <label for="text23"><img src="./src/img/icons/shell_window5-1.png" alt="" />LinkedIn</label>
+                  <a href="https://www.linkedin.com/in/helton-oliveira-521abbb2/">
+                    <input id="text23" type="text" value="linkdin.com/holiv" /></a>
+                </div>
+
+                <div class="field-row-stacked" style="width: 200px">
+                  <label for="text23"><img src="./src/img/icons/newspaper.png" alt="" />Blog</label>
+                  <a href="https://www.linkedin.com/in/helton-oliveira-521abbb2/">
+                    <input id="text23" type="text" value="blog.p30.dev" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="tree-view">
+            <details open>
+              <summary class="main_summary">Formação</summary>
+              <ul>
+                <details open>
+                  <summary>Engenharia Civil</summary>
+                  <ul>
+                    <li>Universidade Estácio de Sá</li>
+                    <li>Bacharelado</li>
+                    <li>Dezembro, 2013</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Engenharia de Segurança do Trabalho</summary>
+                  <ul>
+                    <li>Faculdade Redentor</li>
+                    <li>Pós Graduação</li>
+                    <li>Setembro, 2015</li>
+                  </ul>
+                </details>
+              </ul>
+            </details>
+
+            <details open>
+              <summary class="main_summary">Experiência</summary>
+              <ul>
+                <details open>
+                  <summary>Engenheiro de Segurança do Trabalho</summary>
+                  <ul>
+                    <li>U.S Moura Empreendimentos</li>
+                    <li>2016, Atual</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Engenheiro Civil - Projetista</summary>
+                  <ul>
+                    <li>Projetos civis 2D e 3D</li>
+                    <li>Autônomo</li>
+                    <li>2016, Atual</li>
+                  </ul>
+                </details>
+              </ul>
+            </details>
+
+            <details open>
+              <summary class="main_summary">Idioma</summary>
+              <ul>
+                <details open>
+                  <summary>Inglês</summary>
+                  <ul>
+                    <li>B2</li>
+                  </ul>
+                </details>
+                <details>
+                  <summary>Português</summary>
+                  <ul>
+                    <li>Nativo</li>
+                  </ul>
+                </details>
+              </ul>
+            </details>
+          </ul>
+        </aside>
+
+        <section class="course_list">
+          <ul class="tree-view main_tree-view">
+            <!-- Content render by JavaScript -->
+          </ul>
+        </section>
+
+        <section class="tags">
+          <div class="window">
+            <div class="title-bar">
+              <div class="title-bar-text">Technologies</div>
+              <div class="title-bar-controls">
+                <button aria-label="Help"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <button>HTML</button>
+              <button>CSS</button>
+              <button>JavaScript</button>
+              <button>C#</button>
+              <button disabled>ASP.NET Core</button>
+              <button disabled>SQL Server</button>
+              <button disabled>Entity Framework</button>
+              <button disabled>xUnit</button>
+              <button disabled>SOLID</button>
+              <button disabled>DDD</button>
+            </div>
+          </div>
+
+          <div class="window">
+            <div class="title-bar">
+              <div class="title-bar-text">Projects</div>
+              <div class="title-bar-controls">
+                <button aria-label="Help"></button>
+              </div>
+            </div>
+            <div class="window-body project">
+              <button><a href="https://holiv.github.io/super-mario-startse/" target="_blank">Super Mario
+                  Game</a></button>
+              <button><a href="https://vector-bank.netlify.app/" target="_blank">Vector Bank</a></button>
+              <button><a href="https://github.com/Holiv/pie_shop" target="_blank">Shop Manager</a></button>
+              <button disabled>Interactive Roadmap</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+  </div>
+  <footer class="windows-start-bar">
+    <button>
+      <img src="./src/img/icons/windows-0.png" alt="" />
+      <label for="">Start</label>
+    </button>
+    <div class="field-row">
+      <label for="text21">Copyright © 2023 Helton Oliveira</label>
+      <label for="text21"><a href="https://github.com/Holiv/interactive_roadmap">Github Repository</a></label>
+    </div>
+  </footer>
+
+
+  <script type="module" src="./src/js/course.js"></script>
+  <script type="module" src="./src/js/script.js"></script>
+  <script type="module" src="./src/js/side_functions.js"></script>
+</body>
+
 </html>
