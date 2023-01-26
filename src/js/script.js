@@ -487,3 +487,4 @@ const renderApplication = () => {
 
 renderApplication();
 window.popUpInfo = popUpInfo;
+window.close_popUpInfo = close_popUpInfo;
