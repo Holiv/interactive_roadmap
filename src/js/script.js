@@ -317,7 +317,10 @@ function handleMousePosition(event) {
   positionX = event.clientX;
   positionY = event.clientY;
 }
-
+/*
+@Holiv, it would be really cool if you implemented a Tree. I think this would be a good data structure that
+would simplify this code, while also show off your CS skills
+*/
 //arrays to group courses by subject
 const javascript = [];
 const csharp = [];
