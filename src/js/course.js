@@ -200,7 +200,11 @@ const aspNet_2 = new Course(
     "ASP.NET Core",
     "In this course, you'll learn how to build an API with ASP.NET Core that connects to a database via Entity Framework Core from scratch.",
     "https://app.pluralsight.com/library/courses/asp-dot-net-core-6-web-api-fundamentals/",
-    ...Array(5),
+    "https://nostalgic-judge-413.notion.site/ASP-NET-Core-6-Web-API-Fundamentals-7e1b3b7dab844dd5836dd7827ed05697",
+    new Date(2023, 0, 29),
+    undefined,
+    15,
+    undefined,
     "asp2"
   );
 //#endregion
